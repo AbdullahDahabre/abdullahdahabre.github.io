@@ -6,6 +6,14 @@ import Modal from './ui/Modal';
 
 const projects: Project[] = [
   {
+    title: "AI Job & Resume Coach",
+    description: "Delivered an AI-powered career platform that analyzes resumes, generates tailored cover letters, provides interview Q&A, and recommends job search links. Built with FastAPI, Python, React, and Vite, and deployed on Vercel and Render. Leveraged Groq Llama-3 for PDF resume parsing, professional feedback scoring, and seamless API integration to help users strengthen job applications and interview readiness.",
+    tags: ["Groq Llama-3", "FastAPI", "React", "Vite"],
+    link: "https://github.com/AbdullahDahabre/AI-Job---Resume-Coach",
+    demoLink: "https://ai-job-resume-coach.vercel.app",
+    image: "/project_jobcoach.webp"
+  },
+  {
     title: "T2D Prediction System (Data Fusion)",
     description: (
       <>
@@ -17,14 +25,6 @@ const projects: Project[] = [
     link: "https://github.com/AbdullahDahabre/T2D-Prediction-System--Data-Fusion-for-Enhanced-Decision-Making",
     demoLink: "https://diabtrack.vercel.app",
     image: "/project_t2d.webp"
-  },
-  {
-    title: "AI Job & Resume Coach",
-    description: "Career platform leveraging Groq Llama-3 for PDF resume parsing, scoring, and cover letter generation. Helps users strengthen applications with AI-driven insights.",
-    tags: ["Groq Llama-3", "FastAPI", "React", "Vite"],
-    link: "https://github.com/AbdullahDahabre/AI-Job---Resume-Coach",
-    demoLink: "https://ai-job-resume-coach.vercel.app",
-    image: "/project_jobcoach.webp"
   },
   {
     title: "Brain Tumor Detection",
