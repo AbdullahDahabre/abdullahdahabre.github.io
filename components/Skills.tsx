@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Cpu, 
-  Bot, 
-  Code2, 
-  Database, 
-  Settings, 
-  GitBranch 
+import {
+  Cpu,
+  Bot,
+  Code2,
+  Database,
+  Settings,
+  GitBranch
 } from 'lucide-react';
 import { SkillCategory } from '../types';
 
@@ -32,7 +32,7 @@ const skills: SkillCategory[] = [
   {
     category: "Data Engineering",
     icon: <Database className="w-6 h-6 text-yellow-400" />,
-    items: ["Databases", "SQL", "ETL/ELT Pipelines", "Apache Airflow"],
+    items: ["PostgreSQL", "SQL", "ETL/ELT Pipelines", "Apache Airflow"],
     colorClass: "hover:border-yellow-400/50 hover:shadow-[0_0_20px_rgba(250,204,21,0.15)]"
   },
   {
@@ -80,11 +80,11 @@ const Skills: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold text-gray-100">{skill.category}</h3>
             </div>
-            
+
             <div className="flex flex-wrap gap-2">
               {skill.items.map((item) => (
-                <span 
-                  key={item} 
+                <span
+                  key={item}
                   className="px-3 py-1 text-sm bg-white/5 text-gray-300 rounded-full border border-white/5 group-hover:border-white/10 transition-colors cursor-default"
                 >
                   {item}

@@ -16,13 +16,10 @@ const experiences: ExperienceType[] = [
     logo: '/logo_aibrains.webp',
     description: "Built multiple end-to-end full-stack applications, AI chatbots, and modern user interfaces.",
     details: [
-      "**Abjad Content Creator** — AI content generation platform that creates platform-ready posts from titles or trending topics, with user accounts and saved sessions.",
-      "**Abjad PowerPoint Creator** — Automatically generates structured presentation decks from short inputs.",
-      "**AIRIS Website & LMS** — Full learning platform with verified accounts, paid course access, adaptive exams, certificates, and an admin dashboard.",
-      "**AI Perfume Shop** — AI-powered e-commerce store with product discovery, recommendations, and a complete shopping flow.",
-      "**Chatbots** — Built conversational assistants for Q&A and task automation, integrated into web apps and demos.",
-      "**Company Websites** — Built responsive, professional websites for organizations and businesses.",
-      "**Web Demos & Prototypes** — Delivered multiple interactive demos (including a government HR demo) plus mini-games and UI prototypes."
+      "**Abjad Platforms (Content + PowerPoint Creator)**: AI applications that generate platform-ready posts and structured presentation decks from titles, trending topics, or short prompts.",
+      "**AIRIS Website & LMS**: Learning platform with courses, quizzes/exams, certificates, and dashboards, featuring a RAG-based lecture assistant and a multi-agent AI for learner profiling, project planning, and final evaluation.",
+      "**Chemisoul Perfume Shop**: AI-powered e-commerce experience that helps users discover and personalize a signature fragrance, with recommendations and a complete shopping flow.",
+      "**Chatbots + Websites + Demos**: Built conversational assistants for Q&A/task automation, modern company websites, and interactive web demos/prototypes.",
     ]
   },
   {
@@ -36,13 +33,10 @@ const experiences: ExperienceType[] = [
     logo: '/logo_aibrains.webp',
     description: "Built multiple end-to-end full-stack applications, AI chatbots, and modern user interfaces.",
     details: [
-      "**Abjad Content Creator** — AI content generation platform that creates platform-ready posts from titles or trending topics, with user accounts and saved sessions.",
-      "**Abjad PowerPoint Creator** — Automatically generates structured presentation decks from short inputs.",
-      "**AIRIS Website & LMS** — Full learning platform with verified accounts, paid course access, adaptive exams, certificates, and an admin dashboard.",
-      "**AI Perfume Shop** — AI-powered e-commerce store with product discovery, recommendations, and a complete shopping flow.",
-      "**Chatbots** — Built conversational assistants for Q&A and task automation, integrated into web apps and demos.",
-      "**Company Websites** — Built responsive, professional websites for organizations and businesses.",
-      "**Web Demos & Prototypes** — Delivered multiple interactive demos (including a government HR demo) plus mini-games and UI prototypes."
+      "**Abjad Platforms (Content + PowerPoint Creator)**: AI applications that generate platform-ready posts and structured presentation decks from titles, trending topics, or short prompts.",
+      "**AIRIS Website & LMS**: Learning platform with courses, quizzes/exams, certificates, and dashboards, featuring a RAG-based lecture assistant and a multi-agent AI for learner profiling, project planning, and final evaluation.",
+      "**Chemisoul Perfume Shop**: AI-powered e-commerce experience that helps users discover and personalize a signature fragrance, with recommendations and a complete shopping flow.",
+      "**Chatbots + Websites + Demos**: Built conversational assistants for Q&A/task automation, modern company websites, and interactive web demos/prototypes.",
     ]
   },
   {

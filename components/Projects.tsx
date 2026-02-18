@@ -6,6 +6,14 @@ import Modal from './ui/Modal';
 
 const projects: Project[] = [
   {
+    title: "Haqiqa: Arabic Fake News Detector",
+    description: "Built and deployed a multi-agent LangGraph fact-checking pipeline that covers claim extraction, web search, evidence ranking, verification, and verdict generation, leveraging GPT-4o-mini and Serper with Arabic-specific normalization to produce cited True/False/Unclear outputs. Additionally, I developed a full-stack platform using FastAPI and Next.js 15 (TypeScript/Tailwind), incorporating JWT and Google OAuth for authentication, along with features like analysis history and a Telegram bot. The platform is backed by Supabase (PostgreSQL) and hosted on Render/Vercel. I also implemented production safeguards, including per-user rate limiting through atomic SQL, throttling, admin controls, and performance tracking with LangSmith, which is shared across both web and Telegram clients for enhanced observability and control.",
+    tags: ["LangGraph", "LangSmith", "GPT-4o-mini", "Serper", "FastAPI", "Next.js 15", "Google OAuth", "JWT", "PostgreSQL", "Render", "Vercel", "Telegram Bot"],
+    link: "https://t.me/HaqiqaNewsBot",
+    demoLink: "https://haqiqaa.vercel.app",
+    image: "/haqiqa.webp"
+  },
+  {
     title: "AI Job & Resume Coach",
     description: "Delivered an AI-powered career platform that analyzes resumes, generates tailored cover letters, provides interview Q&A, and recommends job search links. Built with FastAPI, Python, React, and Vite, and deployed on Vercel and Render. Leveraged Groq Llama-3 for PDF resume parsing, professional feedback scoring, and seamless API integration to help users strengthen job applications and interview readiness.",
     tags: ["Groq Llama-3", "FastAPI", "React", "Vite"],
@@ -34,24 +42,6 @@ const projects: Project[] = [
     link: "https://github.com/AbdullahDahabre/Brain-Tumor-Detection",
     demoLink: "https://github.com/AbdullahDahabre",
     image: "/project_tumor.webp"
-  },
-  {
-    title: "Laptop Price Prediction (MLOps - MLflow)",
-    description: "Built a complete MLOps pipeline to predict laptop prices using regression models. Automated data ingestion, preprocessing, training, tuning (with Hyperopt), and deployment with MLflow. Integrated a Streamlit UI for live predictions and served the best model (Ridge Regression) via REST API. Achieved R² ≈ 1.0, MAE = 145.37, and RMSE = 178.74. Logged SHAP plots highlighting Storage Capacity as the most influential feature and tracked all metrics for production-ready workflows.",
-    tags: ["MLOps", "MLflow", "Streamlit", "Hyperopt", "SHAP"],
-    metrics: "R² ≈ 1.0",
-    link: "https://github.com/AbdullahDahabre/LaptopPricePrediction-MLOps",
-    demoLink: "https://github.com/AbdullahDahabre",
-    image: "/project_mlops.webp"
-  },
-  {
-    title: "Titanic Survival Prediction",
-    description: "Developed a predictive model for the Titanic survival dataset using Logistic Regression, Decision Tree, and Random Forest classifiers. Preprocessed data for 891 passengers, engineered features, and resolved data inconsistencies. Achieved best performance with Random Forest (accuracy: 0.83, precision: 0.82, recall: 0.74). Used Grid Search to tune hyperparameters (max_depth=10, n_estimators=150) and validated results with cross validation (mean accuracy: 0.84, std: 0.04).",
-    tags: ["Scikit-learn", "Random Forest", "Grid Search", "Feature Engineering"],
-    metrics: "83% Accuracy",
-    link: "https://github.com/AbdullahDahabre/Titanic--Machine-Learning-from-Disaster",
-    demoLink: "https://github.com/AbdullahDahabre",
-    image: "/project_titanic.webp"
   },
 ];
 
