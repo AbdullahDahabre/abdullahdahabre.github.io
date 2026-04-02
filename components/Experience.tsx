@@ -8,7 +8,7 @@ const experiences: ExperienceType[] = [
   {
     id: '1',
     company: 'Ai Brains',
-    role: 'AI Developer',
+    role: 'AI Engineer',
     period: 'Nov 2025 – Present',
     location: 'Dubai, United Arab Emirates',
     link: 'https://aibrains.com',
@@ -25,7 +25,7 @@ const experiences: ExperienceType[] = [
   {
     id: '2',
     company: 'Ai Brains',
-    role: 'AI Developer Intern',
+    role: 'AI Engineer Intern',
     period: 'July 2025 – Oct 2025',
     location: 'Dubai, United Arab Emirates',
     link: 'https://aibrains.com',
