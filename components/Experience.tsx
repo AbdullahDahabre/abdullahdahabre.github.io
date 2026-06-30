@@ -9,7 +9,7 @@ const experiences: ExperienceType[] = [
     id: '1',
     company: 'Ai Brains',
     role: 'AI Engineer',
-    period: 'Nov 2025 – Present',
+    period: 'July 2025 – Present',
     location: 'Dubai, United Arab Emirates',
     link: 'https://aibrains.com',
     type: 'work',
@@ -24,23 +24,6 @@ const experiences: ExperienceType[] = [
   },
   {
     id: '2',
-    company: 'Ai Brains',
-    role: 'AI Engineer Intern',
-    period: 'July 2025 – Oct 2025',
-    location: 'Dubai, United Arab Emirates',
-    link: 'https://aibrains.com',
-    type: 'work',
-    logo: '/logo_aibrains.webp',
-    description: "Built multiple end-to-end full-stack applications, AI chatbots, and modern user interfaces.",
-    details: [
-      "**Abjad Platforms (Content + PowerPoint Creator)**: AI applications that generate platform-ready posts and structured presentation decks from titles, trending topics, or short prompts.",
-      "**AIRIS Website & LMS**: Learning platform with courses, quizzes/exams, certificates, and dashboards, featuring a RAG-based lecture assistant and a multi-agent AI for learner profiling, project planning, and final evaluation.",
-      "**Chemisoul Perfume Shop**: AI-powered e-commerce experience that helps users discover and personalize a signature fragrance, with recommendations and a complete shopping flow.",
-      "**Chatbots + Websites + Demos**: Built conversational assistants for Q&A/task automation, modern company websites, and interactive web demos/prototypes.",
-    ]
-  },
-  {
-    id: '3',
     company: 'Bahcesehir University',
     role: 'Bachelor’s Degree in AI Engineering',
     period: 'Oct 2021 - June 2025',
@@ -56,7 +39,7 @@ const experiences: ExperienceType[] = [
     ]
   },
   {
-    id: '4',
+    id: '3',
     company: "AL-JAWDA BOYS' SCHOOL",
     role: 'Secondary Education',
     period: 'Sep 2018 – June 2021',
