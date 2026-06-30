@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(gh run:*)",
+      "Bash(where gh:*)",
+      "WebFetch(domain:abdullahdahabre.github.io)",
+      "Bash(curl -s https://abdullahdahabre.github.io/)"
     ]
   }
 }
