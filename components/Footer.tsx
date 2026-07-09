@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
       <div className="max-w-4xl mx-auto px-6 relative z-10">
 
         <div className="flex justify-center gap-8 mb-12">
-          <a href="https://linkedin.com/in/abdullah-dahabre" target="_blank" rel="noreferrer" className="group">
+          <a href="https://linkedin.com/in/abdullahdahabre" target="_blank" rel="noreferrer" className="group">
             <div className="p-3 glass-card rounded-full group-hover:bg-[#0077b5]/20 transition-all group-hover:-translate-y-1">
               <Linkedin className="w-6 h-6 text-gray-300 group-hover:text-[#0077b5]" />
             </div>
