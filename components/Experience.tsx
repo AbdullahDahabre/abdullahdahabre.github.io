@@ -14,12 +14,13 @@ const experiences: ExperienceType[] = [
     link: 'https://aibrains.com',
     type: 'work',
     logo: '/logo_aibrains.webp',
-    description: "Built multiple end-to-end full-stack applications, AI chatbots, and modern user interfaces.",
+    description: "Built and shipped production AI web applications end-to-end — including the Kaveo bilingual LinkedIn personal-branding AI tool, the AIRIS learning platform with its RAG lecture assistant and multi-agent learner profiling, and the Chemisoul AI perfume storefront — alongside conversational assistants, company websites, and interactive demos.",
     details: [
-      "**Abjad Platforms (Content + PowerPoint Creator)**: AI applications that generate platform-ready posts and structured presentation decks from titles, trending topics, or short prompts.",
-      "**AIRIS Website & LMS**: Learning platform with courses, quizzes/exams, certificates, and dashboards, featuring a RAG-based lecture assistant and a multi-agent AI for learner profiling, project planning, and final evaluation.",
-      "**Chemisoul Perfume Shop**: AI-powered e-commerce experience that helps users discover and personalize a signature fragrance, with recommendations and a complete shopping flow.",
-      "**Chatbots + Websites + Demos**: Built conversational assistants for Q&A/task automation, modern company websites, and interactive web demos/prototypes.",
+      "Gathering requirements and translating them into technical specifications, system architecture, and design for production AI web applications.",
+      "Designing, developing, and testing full-stack software systems, including applications built on large language models (LLMs), retrieval-augmented generation (RAG), and multi-agent architectures.",
+      "Building back-end services and APIs with FastAPI and front-end interfaces with React and Next.js, designing PostgreSQL data models, and integrating third-party services such as the OpenAI API, payments, and authentication.",
+      "Deploying and maintaining production applications through CI/CD pipelines, and implementing safeguards such as authentication, rate limiting, and security hardening.",
+      "Testing, monitoring, and maintaining deployed software to ensure reliable, real-world operation.",
     ]
   },
   {
