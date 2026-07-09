@@ -13,8 +13,8 @@ const projects: Project[] = [
     image: "/project_keytext.webp"
   },
   {
-    title: "Haqiqa: Arabic Fake News Detector",
-    description: "Built and deployed a multi-agent LangGraph fact-checking pipeline that covers claim extraction, web search, evidence ranking, verification, and verdict generation, leveraging GPT-4o-mini and Serper with Arabic-specific normalization to produce cited True/False/Unclear outputs. Additionally, I developed a full-stack platform using FastAPI and Next.js 15 (TypeScript/Tailwind), incorporating JWT and Google OAuth for authentication, along with features like analysis history and a Telegram bot. The platform is backed by Supabase (PostgreSQL) and hosted on Render/Vercel. I also implemented production safeguards, including per-user rate limiting through atomic SQL, throttling, admin controls, and performance tracking with LangSmith, which is shared across both web and Telegram clients for enhanced observability and control.",
+    title: "Haqiqa: Agentic Fake News Detector",
+    description: "Built and deployed a multi-agent LangGraph fact-checking pipeline that covers claim extraction, web search, evidence ranking, verification, and verdict generation, leveraging GPT-4o-mini and Serper with language-aware normalization including Arabic support, to produce cited True/False/Unclear outputs. Additionally, I developed a full-stack platform using FastAPI and Next.js 15 (TypeScript/Tailwind), incorporating JWT and Google OAuth for authentication, along with features like analysis history and a Telegram bot. The platform is backed by Supabase (PostgreSQL) and hosted on Render/Vercel. I also implemented production safeguards, including per-user rate limiting through atomic SQL, throttling, admin controls, and performance tracking with LangSmith, which is shared across both web and Telegram clients for enhanced observability and control.",
     tags: ["LangGraph", "LangSmith", "GPT-4o-mini", "Serper", "FastAPI", "Next.js 15", "Google OAuth", "JWT", "PostgreSQL", "Render", "Vercel", "Telegram Bot"],
     link: "https://t.me/HaqiqaNewsBot",
     demoLink: "https://haqiqaa.vercel.app",
