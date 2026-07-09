@@ -6,6 +6,13 @@ import Modal from './ui/Modal';
 
 const projects: Project[] = [
   {
+    title: "KeyText: AI Writing & Snippet Assistant",
+    description: "Built a Chrome extension and full-stack SaaS for AI-assisted writing that expands reusable snippets with dynamic {{variables}} and rewrites, replies to, and generates text inline across Gmail, LinkedIn, Reddit, and other rich-text editors to speed up everyday communication. The system comprises a Manifest V3 extension (vanilla JS), a Node HTTP API, and a Next.js 15 admin dashboard, all backed by Supabase (PostgreSQL) with Stripe subscriptions and shipped via CI/CD to a self-managed VPS behind nginx. It integrates OpenAI GPT-4o-mini for streaming rewrite/reply/generation with production safeguards, Supabase JWT auth, per-user rate limiting and concurrency guards, and atomic SQL monthly/daily quota enforcement across Free/Pro/Team tiers.",
+    tags: ["Chrome Extension", "Manifest V3", "Node.js", "Next.js 15", "Supabase", "PostgreSQL", "Stripe", "GPT-4o-mini", "nginx", "CI/CD"],
+    demoLink: "https://keytext.app",
+    image: "/project_keytext.webp"
+  },
+  {
     title: "Haqiqa: Arabic Fake News Detector",
     description: "Built and deployed a multi-agent LangGraph fact-checking pipeline that covers claim extraction, web search, evidence ranking, verification, and verdict generation, leveraging GPT-4o-mini and Serper with Arabic-specific normalization to produce cited True/False/Unclear outputs. Additionally, I developed a full-stack platform using FastAPI and Next.js 15 (TypeScript/Tailwind), incorporating JWT and Google OAuth for authentication, along with features like analysis history and a Telegram bot. The platform is backed by Supabase (PostgreSQL) and hosted on Render/Vercel. I also implemented production safeguards, including per-user rate limiting through atomic SQL, throttling, admin controls, and performance tracking with LangSmith, which is shared across both web and Telegram clients for enhanced observability and control.",
     tags: ["LangGraph", "LangSmith", "GPT-4o-mini", "Serper", "FastAPI", "Next.js 15", "Google OAuth", "JWT", "PostgreSQL", "Render", "Vercel", "Telegram Bot"],
