@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { Certification } from '../types';
 
 const certifications: Certification[] = [
-  { name: 'Agentic AI Engineering', issuer: 'Udemy', url: 'https://www.udemy.com/certificate/UC-6fa7d62e-8106-488e-85eb-6f22afb6e2f5', logo: '/certificate_udemy.webp' },
-  { name: 'Machine Learning A-Z', issuer: 'Udemy', url: 'https://www.udemy.com/certificate/UC-743671f3-6679-4954-9d2c-a616d1cb9f4a', logo: '/certificate_udemy.webp' },
-  { name: 'Deep Learning Specialization', issuer: 'Coursera', url: 'https://www.coursera.org/account/accomplishments/specialization/Y7LS66FTK3TK', logo: '/certificate_deep.webp' },
-  { name: 'IBM Data Science Specialization', issuer: 'Coursera', url: 'https://www.coursera.org/account/accomplishments/specialization/HZDQ94KAQ2U2', logo: '/certificate_ibm.webp' },
-  { name: 'MLOps Specialization', issuer: 'Duke University', url: 'https://www.coursera.org/account/accomplishments/specialization/7J8USLWMYN05', logo: '/certificate_duke.webp' },
-  { name: 'Build Chat Applications', issuer: '365 Data Science', url: 'https://learn.365datascience.com/c/fc2137dad3/', logo: '/certificate_365.webp' },
+  { name: 'Agentic AI Engineering', issuer: 'Udemy', url: 'https://www.udemy.com/certificate/UC-6fa7d62e-8106-488e-85eb-6f22afb6e2f5', logo: '/certificates/certificate_udemy.webp' },
+  { name: 'Machine Learning A-Z', issuer: 'Udemy', url: 'https://www.udemy.com/certificate/UC-743671f3-6679-4954-9d2c-a616d1cb9f4a', logo: '/certificates/certificate_udemy.webp' },
+  { name: 'Deep Learning Specialization', issuer: 'Coursera', url: 'https://www.coursera.org/account/accomplishments/specialization/Y7LS66FTK3TK', logo: '/certificates/certificate_deep.webp' },
+  { name: 'IBM Data Science Specialization', issuer: 'Coursera', url: 'https://www.coursera.org/account/accomplishments/specialization/HZDQ94KAQ2U2', logo: '/certificates/certificate_ibm.webp' },
+  { name: 'MLOps Specialization', issuer: 'Duke University', url: 'https://www.coursera.org/account/accomplishments/specialization/7J8USLWMYN05', logo: '/certificates/certificate_duke.webp' },
+  { name: 'Build Chat Applications', issuer: '365 Data Science', url: 'https://learn.365datascience.com/c/fc2137dad3/', logo: '/certificates/certificate_365.webp' },
 ];
 
 const Certifications: React.FC = () => {

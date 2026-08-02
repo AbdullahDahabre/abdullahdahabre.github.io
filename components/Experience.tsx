@@ -13,8 +13,8 @@ const experiences: ExperienceType[] = [
     location: 'Dubai, United Arab Emirates',
     link: 'https://aibrains.com',
     type: 'work',
-    logo: '/logo_aibrains.webp',
-    description: "Built and shipped production AI web applications end-to-end — including the Kaveo bilingual LinkedIn personal-branding AI tool, the AIRIS learning platform with its RAG lecture assistant and multi-agent learner profiling, and the Chemisoul AI perfume storefront — alongside conversational assistants, company websites, and interactive demos.",
+    logo: '/education/logo_aibrains.webp',
+    description: "Built and shipped production AI web applications end-to-end, including the Kaveo bilingual LinkedIn personal-branding AI tool, the AIRIS learning platform with its RAG lecture assistant and multi-agent learner profiling, and the Chemisoul AI perfume storefront, alongside conversational assistants, company websites, and interactive demos.",
     details: [
       "Gathering requirements and translating them into technical specifications, system architecture, and design for production AI web applications.",
       "Designing, developing, and testing full-stack software systems, including applications built on large language models (LLMs), retrieval-augmented generation (RAG), and multi-agent architectures.",
@@ -31,7 +31,7 @@ const experiences: ExperienceType[] = [
     location: 'Istanbul, Turkey',
     link: 'https://www.bau.edu.tr',
     type: 'education',
-    logo: '/logo_bau.webp',
+    logo: '/education/logo_bau.webp',
     grade: "GPA: 3.39 | 2x High Honor, 2x Honor Certificates",
     details: [
       "Specialized in AI/ML.",
@@ -46,7 +46,7 @@ const experiences: ExperienceType[] = [
     period: 'Sep 2018 – June 2021',
     location: 'Ras Al Khaimah, United Arab Emirates',
     type: 'education',
-    logo: '/logo_school.webp',
+    logo: '/education/logo_school.webp',
     grade: "Grade: 95.88 | UAE Golden Visa Recipient",
     details: [
       "3x Spelling Bee Awards",
