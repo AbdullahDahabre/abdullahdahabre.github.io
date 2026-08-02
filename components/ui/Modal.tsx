@@ -21,6 +21,15 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [isOpen, onClose]);
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -38,10 +47,16 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             className="fixed inset-0 z-[70] flex items-center justify-center p-4 pointer-events-none"
           >
-            <div className="bg-midnight border border-white/10 rounded-2xl w-full max-w-2xl max-h-[80vh] overflow-hidden flex flex-col pointer-events-auto shadow-2xl shadow-neonCyan/10">
+            <div
+              role="dialog"
+              aria-modal="true"
+              aria-label={title}
+              className="bg-midnight border border-white/10 rounded-2xl w-full max-w-2xl max-h-[80vh] overflow-hidden flex flex-col pointer-events-auto shadow-2xl shadow-neonCyan/10"
+            >
               <div className="p-6 border-b border-white/10 flex justify-between items-center bg-white/5">
                 <h3 className="text-xl font-bold text-white pr-8">{title}</h3>
                 <button
+                  aria-label="Close dialog"
                   onClick={onClose}
                   className="p-2 hover:bg-white/10 rounded-full transition-colors text-gray-400 hover:text-white"
                 >
