@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 import { MoreVertical, X } from 'lucide-react';
+import { useRouter } from '../lib/router';
 
 const Navbar: React.FC = () => {
   const [hidden, setHidden] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { path, navigate } = useRouter();
   const { scrollY } = useScroll();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -19,10 +21,26 @@ const Navbar: React.FC = () => {
 
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
+
+    // Sections only exist on the home page, so route there first when we're not on it.
+    if (path !== '/') {
+      navigate(`/#${id}`);
+      return;
+    }
+
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const goHome = () => {
+    setMobileMenuOpen(false);
+    if (path !== '/') {
+      navigate('/');
+      return;
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const navLinks = [
@@ -44,7 +62,7 @@ const Navbar: React.FC = () => {
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-4 backdrop-blur-md bg-midnight/70 border-b border-white/5"
     >
-      <div className="text-neonCyan font-mono font-bold text-xl cursor-pointer shrink-0 z-50" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+      <div className="text-neonCyan font-mono font-bold text-xl cursor-pointer shrink-0 z-50" onClick={goHome}>
         AD<span className="text-neonPurple">.</span>
       </div>
       

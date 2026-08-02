@@ -1,13 +1,24 @@
 import React from 'react';
 
+export interface ProjectLink {
+  label: string;
+  href: string;
+  icon?: 'kaggle' | 'telegram' | 'link';
+}
+
 export interface Project {
+  slug: string; // Stable id used for keys and (future) deep links
   title: string;
+  period: string; // e.g. "May 2026 – Present"
+  association?: string; // e.g. "Bahcesehir University"
   description: string | React.ReactNode;
   tags: string[];
-  link?: string; // This will serve as the Source Code (Repo) link
-  demoLink?: string; // This will serve as the View Project (Web) link
+  link?: string; // Source code (repo) link
+  demoLink?: string; // Live / "View Project" link
+  extraLinks?: ProjectLink[]; // Anything else (Telegram bot, paper, etc.)
   metrics?: string;
-  image?: string; // Added for project preview image
+  image?: string; // Project preview image; falls back to a generated placeholder
+  featured?: boolean; // Shown in the "Featured Projects" grid on the home page
 }
 
 export interface Experience {
