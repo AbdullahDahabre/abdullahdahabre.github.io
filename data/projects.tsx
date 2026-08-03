@@ -214,7 +214,7 @@ export const projects: Project[] = [
         icon: 'kaggle',
       },
     ],
-    image: '/projects/project_titanic.webp',
+    image: '/projects/titanic.png',
   },
   {
     slug: 'red-wine-quality',
