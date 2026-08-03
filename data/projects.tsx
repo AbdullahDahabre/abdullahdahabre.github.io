@@ -1,5 +1,5 @@
 import React from 'react';
-import { Project } from '../types';
+import { Project, ProjectCategory } from '../types';
 
 /**
  * Single source of truth for every project on the site, in display order.
@@ -12,6 +12,7 @@ import { Project } from '../types';
 export const projects: Project[] = [
   {
     slug: 'lavabella',
+    category: 'production',
     title: 'LavaBella: AI Skincare Companion (iOS)',
     period: 'May 2026 – Present',
     featured: true,
@@ -40,6 +41,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'keytext',
+    category: 'production',
     title: 'KeyText: AI Writing & Snippet Assistant',
     period: 'Apr 2026 – May 2026',
     featured: true,
@@ -62,6 +64,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'haqiqa',
+    category: 'production',
     title: 'Haqiqa: Agentic Fake News Detector',
     period: 'Dec 2025 – Feb 2026',
     featured: true,
@@ -87,6 +90,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'ai-job-resume-coach',
+    category: 'production',
     title: 'AI Job & Resume Coach',
     period: 'Jul 2025',
     featured: true,
@@ -99,6 +103,7 @@ export const projects: Project[] = [
   },
   {
     slug: 't2d-prediction-system',
+    category: 'applied-ml',
     title: 'T2D Prediction System (Data Fusion)',
     period: 'Feb 2025 – Jun 2025',
     association: 'Bahcesehir University',
@@ -130,6 +135,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'brain-tumor-detection',
+    category: 'applied-ml',
     title: 'Brain Tumor Detection',
     period: 'May 2025',
     association: 'Bahcesehir University',
@@ -143,6 +149,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'laptop-price-mlops',
+    category: 'applied-ml',
     title: 'Laptop Price Prediction: End-to-End MLOps Pipeline',
     period: 'Jun 2025',
     association: 'Bahcesehir University',
@@ -155,6 +162,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'house-prices-regression',
+    category: 'foundations',
     title: 'House Prices: Advanced Regression Techniques',
     period: 'Sep 2023',
     description:
@@ -173,6 +181,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'customer-personality-analysis',
+    category: 'foundations',
     title: 'Customer Personality Analysis',
     period: 'Jul 2024',
     description:
@@ -190,6 +199,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'titanic-survival',
+    category: 'foundations',
     title: 'Titanic: Machine Learning from Disaster',
     period: 'Nov 2023',
     description:
@@ -208,6 +218,7 @@ export const projects: Project[] = [
   },
   {
     slug: 'red-wine-quality',
+    category: 'foundations',
     title: 'Red Wine Quality: EDA & Classification',
     period: 'Sep 2023',
     description:
@@ -227,6 +238,31 @@ export const projects: Project[] = [
 ];
 
 export const featuredProjects = projects.filter((project) => project.featured);
+
+/** Archive sections, in the order they appear on /projects. */
+const CATEGORIES: { id: ProjectCategory; label: string; blurb: string }[] = [
+  {
+    id: 'production',
+    label: 'Production AI Systems',
+    blurb: 'Products with real users, running on infrastructure I built and maintain.',
+  },
+  {
+    id: 'applied-ml',
+    label: 'Applied ML & Deep Learning',
+    blurb: 'University and research work where the model is the deliverable, from training through deployment.',
+  },
+  {
+    id: 'foundations',
+    label: 'ML Foundations & Kaggle',
+    blurb: 'Earlier self-directed work on classic datasets, where I picked up the fundamentals.',
+  },
+];
+
+/** Projects bucketed into their section, keeping the order declared above. */
+export const projectSections = CATEGORIES.map((category) => ({
+  ...category,
+  items: projects.filter((project) => project.category === category.id),
+})).filter((section) => section.items.length > 0);
 
 /** Span covered by the archive, derived from the `period` strings above. */
 export const projectYearRange = ((): { first: number; last: number } => {

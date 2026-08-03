@@ -6,8 +6,12 @@ export interface ProjectLink {
   icon?: 'kaggle' | 'telegram' | 'link';
 }
 
+/** Archive sections, ordered by how current and substantial the work is. */
+export type ProjectCategory = 'production' | 'applied-ml' | 'foundations';
+
 export interface Project {
   slug: string; // Stable id used for keys and (future) deep links
+  category: ProjectCategory;
   title: string;
   period: string; // e.g. "May 2026 – Present"
   association?: string; // e.g. "Bahcesehir University"

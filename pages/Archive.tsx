@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Github } from 'lucide-react';
 import { Project } from '../types';
-import { projects, projectYearRange } from '../data/projects';
+import { projects, projectSections, projectYearRange } from '../data/projects';
 import { Link, useRouter } from '../lib/router';
 import ProjectCard from '../components/ProjectCard';
 import ProjectModal from '../components/ProjectModal';
@@ -96,17 +96,40 @@ const Archive: React.FC = () => {
         <div className="h-[1px] bg-gray-800 w-full mt-10 mb-12" />
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={project.slug}
-            project={project}
-            index={index}
-            onSelect={setSelectedProject}
-            showPeriod
-          />
-        ))}
-      </div>
+      {projectSections.map((section) => (
+        <section key={section.id} aria-labelledby={`section-${section.id}`} className="mb-16 last:mb-0">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mb-8"
+          >
+            <div className="flex items-baseline gap-4">
+              <h2 id={`section-${section.id}`} className="text-2xl font-bold text-white">
+                {section.label}
+              </h2>
+              <span className="font-mono text-xs text-gray-500 shrink-0">
+                {section.items.length} projects
+              </span>
+              <div className="h-[1px] bg-gray-800 flex-grow hidden md:block" />
+            </div>
+            <p className="mt-2 max-w-2xl text-sm text-gray-500">{section.blurb}</p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
+            {section.items.map((project, index) => (
+              <ProjectCard
+                key={project.slug}
+                project={project}
+                index={index}
+                onSelect={setSelectedProject}
+                showPeriod
+              />
+            ))}
+          </div>
+        </section>
+      ))}
     </section>
   );
 };
